@@ -1,9 +1,11 @@
 #Run the below commands to pull the infracloud and Prometheus Image.
+
 docker pull infracloudio/csvserver:latest
 docker pull prom/prometheus:v2.22.0
 
 
 #Run the below Command to run the infracloud container.
+
 docker run -d -v /home/swapnil/csvserver/inputdata:/csvserver/inputdata -p 9393:9300 -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
 
 
