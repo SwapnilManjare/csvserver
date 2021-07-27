@@ -1,6 +1,7 @@
 #Run the below commands to pull the infracloud and Prometheus Image.
 
 docker pull infracloudio/csvserver:latest
+
 docker pull prom/prometheus:v2.22.0
 
 
