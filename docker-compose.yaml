@@ -8,3 +8,10 @@ services:
       - "/home/swapnil/csvserver/inputdata:/csvserver/inputdata"
     environment:
       CSVSERVER_BORDER: Orange
+
+  prometheus:
+    image: prom/prometheus:v2.22.0
+    ports:
+      - 9090:9090
+    volumes:
+      - "/home/swapnil/csvserver/:/etc/prometheus"
