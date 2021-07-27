@@ -1,0 +1,10 @@
+version: "3"
+services:
+  application:
+    image: infracloudio/csvserver:latest
+    ports:
+      - "9393:9300"
+    volumes:
+      - "/home/swapnil/csvserver/inputdata:/csvserver/inputdata"
+    environment:
+      CSVSERVER_BORDER: Orange
