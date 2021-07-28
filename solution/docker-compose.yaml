@@ -7,7 +7,7 @@ services:
     ports:
       - "9393:9300"
     volumes:
-      - "/home/swapnil/csvserver/inputdata:/csvserver/inputdata"
+      - "/home/swapnil/devopsassignment/solution/inputdata:/csvserver/inputdata"
     environment:
       CSVSERVER_BORDER: Orange
 
@@ -18,5 +18,4 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - "/home/swapnil/csvserver/solution/:/etc/prometheus"
-~                                                                
+      - "/home/swapnil/devopsassignment/solution/:/etc/prometheus"                           
