@@ -1,6 +1,8 @@
 version: "3"
 services:
   application:
+    container_name: application
+    hostname: application
     image: infracloudio/csvserver:latest
     ports:
       - "9393:9300"
@@ -10,8 +12,11 @@ services:
       CSVSERVER_BORDER: Orange
 
   prometheus:
+    container_name: prometheus
+    hostname: prometheus
     image: prom/prometheus:v2.22.0
     ports:
       - 9090:9090
     volumes:
-      - "/home/swapnil/csvserver/:/etc/prometheus"
+      - "/home/swapnil/csvserver/solution/:/etc/prometheus"
+~                                                                
